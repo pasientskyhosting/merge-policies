@@ -35,6 +35,9 @@ policy:
 approval_rules:
   - name: The DevOps team has approved
     options:
+      # If true, approvals by the author of a pull request are considered when
+      # calculating the status. False by default.
+      allow_author: true
       # "methods" defines how users may express approval. The defaults are below.
       methods:
         comments:
